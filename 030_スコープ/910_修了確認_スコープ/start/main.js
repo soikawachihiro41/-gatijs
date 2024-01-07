@@ -53,3 +53,7 @@ fn2();
         console.log(num);
     }
 }
+increment();
+increment();
+increment();
+increment();
