@@ -8,4 +8,3 @@ hello()
 let name;
 
 name && hello(name);
-
