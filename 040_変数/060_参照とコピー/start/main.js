@@ -7,6 +7,5 @@ let c = {
   prop: 'hello'
 }
 let d = c;
-// d.prop = 'bye';
-d = {};
+d.prop = 'byb';
 console.log(c, d);
