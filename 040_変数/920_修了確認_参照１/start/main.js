@@ -23,7 +23,7 @@ function fn1(arg) {
 }
 let obj3 = fn1(obj2);
 
-// console.log(obj); // 問題３
+console.log(obj); // 問題３
 
 function fn2(arg) {
     arg = {};
@@ -31,4 +31,4 @@ function fn2(arg) {
 }
 const obj4 = fn2(obj); // 問題４
 
-// console.log(obj); // 問題４
+console.log(obj); // 問題４
