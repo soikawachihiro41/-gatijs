@@ -2,13 +2,13 @@ window.name = 'John';
 
 const person = {
     name: 'Tom',
-    hello: function() {
+    hello: function () {
         console.log('Hello ' + this.name);
         a();
 
         const person = {
             name: 'Tim',
-            hello: function() {
+            hello: function () {
                 console.log('Hello ' + this.name);
                 a();
             }
@@ -25,3 +25,4 @@ person.hello();
 function a() {
     console.log('Hello ' + this.name);
 }
+a();
