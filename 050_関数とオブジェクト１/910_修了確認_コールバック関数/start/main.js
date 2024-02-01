@@ -28,7 +28,10 @@ setTimeout(function () {
  * 示する関数です。
  */
 
-
+setTimeout(function () {
+    const hello = person.hello();
+    alert(hello);
+}, 1000);
 /**
  * 問題３：
  * objにgreetingというメソッドを実装しました。
