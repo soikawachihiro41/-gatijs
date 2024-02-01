@@ -12,7 +12,10 @@ const person = {
     }
 }
 
-// setTimeout(/** ここに追記 */, 1000);
+setTimeout(function () {
+    const hello = person.hello();
+    console.log(hello);
+}, 1000);
 
 /**
  * 問題２：
@@ -37,7 +40,7 @@ const person = {
  * 'hello'または'hey'のどちらでしょうか？
  */
 const obj = {};
-obj.greeting = function() {
+obj.greeting = function () {
     console.log('hello');
 }
 
@@ -49,7 +52,7 @@ function after1s(callack) {
 // after1s(obj.greeting);
 
 // この後でgreetingを書き換えます。
-obj.greeting = function() {
+obj.greeting = function () {
     console.log('hey');
 }
 
@@ -65,22 +68,22 @@ obj.greeting = function() {
  */
 function calcFactory(val) {
     return {
-        plus: function(target) {
+        plus: function (target) {
             const newVal = val + target;
             console.log(`${val} + ${target} = ${newVal}`);
             val = newVal;
         },
-        minus: function(target) {
+        minus: function (target) {
             const newVal = val - target;
             console.log(`${val} - ${target} = ${newVal}`);
             val = newVal;
         },
-        multiply: function(target) {
+        multiply: function (target) {
             const newVal = val * target;
             console.log(`${val} x ${target} = ${newVal}`);
             val = newVal;
         },
-        divide: function(target) {
+        divide: function (target) {
             const newVal = val / target;
             console.log(`${val} / ${target} = ${newVal}`);
             val = newVal;
@@ -89,8 +92,8 @@ function calcFactory(val) {
 }
 
 const calc = calcFactory(10);
-calc.plus(5); 
-calc.minus(3); 
+calc.plus(5);
+calc.minus(3);
 calc.multiply(3);
 calc.divide(2);
 
