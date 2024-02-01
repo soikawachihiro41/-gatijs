@@ -1,10 +1,16 @@
 window.name = 'John';
-const a = () => console.log('Bey ' + this.name);
 const person = {
     name: 'Tom',
     hello() {
         console.log('Hello ' + this.name);
+        const a = () => console.log('Bey ' + this.name);
         a();
     }
 }
-person.hello();
+//person.hello();
+function b() {
+    const a = () => console.log('Bey ' + this.name);
+    a();
+}
+
+b();
