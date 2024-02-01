@@ -1,6 +1,6 @@
 const person = {
     name: 'Tom',
-    bye: () => {
+    bye() {
         console.log('Bye ' + this.name);
     },
     hello: function (greeting) {
@@ -24,7 +24,6 @@ const person = {
      */
 
 
-    
 }
 
 /**
@@ -33,7 +32,7 @@ const person = {
  * と出力されるように、以下のコード
  * の記載を変更しましょう。
  */
-setTimeout(person.hello, 1000);
+setTimeout(person.hello.bind(person, 'hello'), 1000);
 
 /**
  * 問題２：
@@ -41,7 +40,7 @@ setTimeout(person.hello, 1000);
  * と出力されるように、
  * 以下のコードを変更してください。
  */
-alert(person.hello);
+alert(person.hell('hello'));
 
 /**
  * 問題３：

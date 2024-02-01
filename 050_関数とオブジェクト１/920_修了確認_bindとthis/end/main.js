@@ -30,7 +30,7 @@ const person = {
         // }, 1000);
 
         const _this = this;
-        setTimeout(function() {
+        setTimeout(function () {
             _this.hello('hello');
         })
     }
