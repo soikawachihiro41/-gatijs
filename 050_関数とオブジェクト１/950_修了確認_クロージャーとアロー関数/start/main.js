@@ -5,7 +5,7 @@
  * 問題１：
  * addNumberFactoryを短く書き直してみましょう。
  */
-function addNumberFactory(num) {
+const addNumberFactory = num => {
     function addNumber(value) {
         return num + value;
     }
@@ -21,7 +21,7 @@ console.log(result);
  * incrementFactoryを短く書き直してみましょう。
  */
 function incrementFactory() {
-    
+
     let num = 0;
 
     function a() {
