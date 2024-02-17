@@ -28,7 +28,6 @@ function incrementFactory() {
         num = num + 1;
         console.log(num);
     }
-
     return a;
 }
 
