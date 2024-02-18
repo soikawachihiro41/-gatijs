@@ -30,6 +30,7 @@ function calcFactory(val, callback) {
             }
         };
     }
+    
 }
 const calc = calcFactory(10, console.log);
 calc.plus(5);
