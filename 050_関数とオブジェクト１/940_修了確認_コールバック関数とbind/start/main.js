@@ -28,7 +28,6 @@ function calcFactory(val, callback) {
                 callback(`${val} / ${target} = ${newVal}`);
                 val = newVal;
             }
-            
         };
     } 
 }
